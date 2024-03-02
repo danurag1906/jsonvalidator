@@ -83,7 +83,8 @@ const JSONToCSV = () => {
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <div className="json-formatter-content">
         <div className="json-input">
-          <h3>JSON Input</h3>
+          <h3>JSON Input </h3>
+          <p>Enter data in [] braces.</p>
           <AceEditor
             mode="json"
             theme="monokai"
