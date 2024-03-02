@@ -1,0 +1,45 @@
+.json-formatter-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100vw; /* Set width to 100% */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  
+  .json-formatter-title {
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .format-button,
+  .clear-button ,
+  .download-button,
+  .copy-button{
+    margin-left: auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: medium;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .json-formatter-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .json-editor {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
