@@ -15,10 +15,10 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<JSONFormatter />} />
-          <Route path="/json-to-csv" element={<JSONToCSV />} />
-          <Route path="/csv-to-json" element={<CSVToJSON />} />
-          <Route path="/json-validator" element={<ValidateJSON />} />
-          <Route path="/xml-formatter" element={<XMLFormatter />} />
+          <Route exact path="/json-to-csv" element={<JSONToCSV />} />
+          <Route exact path="/csv-to-json" element={<CSVToJSON />} />
+          <Route exact path="/json-validator" element={<ValidateJSON />} />
+          <Route exact path="/xml-formatter" element={<XMLFormatter />} />
         </Routes>
       </div>
     </BrowserRouter>
