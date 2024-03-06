@@ -47,7 +47,7 @@ const XMLFormatter = () => {
   return (
     <main className="json-formatter-container">
       <Helmet>
-        <title>XML Formatter</title>
+        <title>JSON and XML Formatter</title>
         <meta
           name="description"
           content="Format your XML code effortlessly. Format, fix indentation, and copy the formatted XML for sharing."
