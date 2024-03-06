@@ -13,7 +13,7 @@ const Footer = () => {
       <p style={{ color: "white" }}>
         Developed and maintained by{" "}
         <span>
-          <a target="_blank" href="https://anuragdaliya.vercel.app/">
+          <a target="_blank" href="https://www.linkedin.com/in/anurag-daliya/">
             Anurag Daliya.
           </a>
         </span>
