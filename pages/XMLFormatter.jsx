@@ -81,7 +81,7 @@ const XMLFormatter = () => {
           </button>
         )}
       </div>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
+
       <div className="json-formatter-content">
         <AceEditor
           mode="xml"
@@ -109,6 +109,7 @@ const XMLFormatter = () => {
           className="json-editor"
         />
       </div>
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
       <div className="json-formatter-description">
         <div>
           <h2>What is XML?</h2>

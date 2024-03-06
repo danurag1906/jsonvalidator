@@ -17,11 +17,14 @@ const JsonFormatter = () => {
 
   const formatJson = () => {
     try {
-      const formatted = JSON.stringify(JSON.parse(jsonData), null, 2);
+      const parsedJson = JSON.parse(jsonData); // Attempt to parse JSON
+      const formatted = JSON.stringify(parsedJson, null, 1);
       setFormattedJson(formatted);
-      setErrorMessage("");
+      setErrorMessage(""); // Clear any previous error message
     } catch (error) {
-      setErrorMessage(error.message);
+      console.log(error);
+      setFormattedJson(""); // Clear formatted JSON
+      setErrorMessage("Invalid JSON: " + error.message); // Set error message
     }
   };
 
@@ -76,6 +79,7 @@ const JsonFormatter = () => {
           </button>
         )}
       </div>
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
       <div className="json-formatter-content">
         <AceEditor
           mode="json"
@@ -103,7 +107,7 @@ const JsonFormatter = () => {
           className="json-editor"
         />
       </div>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
+
       <div className="json-formatter-description">
         <div>
           <h2>What is JSON?</h2>

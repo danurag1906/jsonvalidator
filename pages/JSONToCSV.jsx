@@ -5,7 +5,8 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-json";
 // import "ace-builds/src-noconflict/mode-csv";
 import "ace-builds/src-noconflict/theme-monokai";
-import "../css/JSONFormatter.css"; // Import CSS file for additional styling
+// import "../css/JSONFormatter.css"; // Import CSS file for additional styling
+import "../css/JSONToCSV.css";
 
 const JSONToCSV = () => {
   const [jsonData, setJsonData] = useState("");
@@ -77,6 +78,7 @@ const JSONToCSV = () => {
           the "Download CSV" button or copy the CSV data to your clipboard by
           clicking the "Copy to Clipboard" button.
         </p>
+        <p>Enter data in [] brackets</p>
       </div>
       <div className="json-formatter-actions">
         <button onClick={convertJSONToCSV} className="format-button">
@@ -100,7 +102,7 @@ const JSONToCSV = () => {
       <div className="json-formatter-content">
         <div className="json-input">
           <h3>JSON Input </h3>
-          <p>Enter data in [] brackets</p>
+          {/* <p>Enter data in [] brackets</p> */}
           <AceEditor
             mode="json"
             theme="monokai"

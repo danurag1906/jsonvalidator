@@ -5,7 +5,8 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-json";
 // import "ace-builds/src-noconflict/mode-csv";
 import "ace-builds/src-noconflict/theme-monokai";
-import "../css/JSONFormatter.css"; // Import CSS file for additional styling
+// import "../css/JSONFormatter.css"; // Import CSS file for additional styling
+import "../css/JSONToCSV.css";
 
 const CSVToJSON = () => {
   const [csvData, setCsvData] = useState("");

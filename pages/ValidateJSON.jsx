@@ -13,6 +13,7 @@ const ValidateJSON = () => {
   const handleJsonChange = (newJsonData) => {
     setJsonData(newJsonData);
     setErrorMessage("");
+    setIsValidationClicked(false);
   };
 
   const validateJson = () => {
@@ -82,7 +83,7 @@ const ValidateJSON = () => {
           highlightActiveLine={true}
           setOptions={{ useWorker: false, wrap: true }}
         />
-        <div className="editor-description">
+        <div>
           <h4>About JSON:</h4>
           <p>
             JSON (JavaScript Object Notation) is a lightweight data interchange
