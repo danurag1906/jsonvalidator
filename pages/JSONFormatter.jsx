@@ -41,10 +41,10 @@ const JsonFormatter = () => {
   return (
     <main className="json-formatter-container">
       <Helmet>
-        <title>JSON and XML Formatter</title>
+        <title>JSON and XML Formatter : Format JSON and XML online</title>
         <meta
           name="description"
-          content="Easily format JSON and XML data with our online JSON Formatter tool. Instantly improve readability and organization of your JSON and XML data for better understanding."
+          content="Easily format JSON & XML data with our online JSON Formatter tool. Improve readability and organization of your JSON & XML data for better understanding."
         />
         <meta
           name="keywords"

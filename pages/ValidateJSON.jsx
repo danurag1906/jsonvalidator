@@ -35,7 +35,7 @@ const ValidateJSON = () => {
   return (
     <main className="json-formatter-container">
       <Helmet>
-        <title>JSON and XML Formatter</title>
+        <title>JSON and XML Formatter : Format JSON and XML online</title>
         <meta
           name="description"
           content="Validate JSON data for syntax errors and integrity. Copy the validated JSON or download the validated JSON file."

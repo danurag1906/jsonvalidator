@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jsonformatter-lilac.vercel.app/</loc>
+    </url>
+    <url>
+        <loc>https://jsonformatter-lilac.vercel.app/json-to-csv</loc>
+    </url>
+    <url>
+        <loc>https://jsonformatter-lilac.vercel.app/csv-to-json</loc>
+    </url>
+    <url>
+        <loc>https://jsonformatter-lilac.vercel.app/json-validator</loc>
+    </url>
+    <url>
+        <loc>https://jsonformatter-lilac.vercel.app/xml-formatter</loc>
+    </url>
+
+    
+</urlset>
