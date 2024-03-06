@@ -54,7 +54,7 @@ const XMLFormatter = () => {
         />
         <meta
           name="keywords"
-          content="XML Formatter, format XML, XML indentation, XML formatting tool, online XML formatter, XML code formatting"
+          content="XML Formatter, format XML, online XML formatter,xml formatter online, XML code formatting"
         />
       </Helmet>
 

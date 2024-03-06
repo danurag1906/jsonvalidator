@@ -48,7 +48,7 @@ const JsonFormatter = () => {
         />
         <meta
           name="keywords"
-          content="JSON formatter, JSON beautifier, format JSON, beautify JSON, JSON formatting tool, JSON online tool"
+          content="json formatter, json beautifier, format json, beautify json, json formatting tool, json online tool ,json online formatter,online json formatter "
         />
       </Helmet>
 

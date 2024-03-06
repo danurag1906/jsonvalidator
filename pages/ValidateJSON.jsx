@@ -42,7 +42,7 @@ const ValidateJSON = () => {
         />
         <meta
           name="keywords"
-          content="JSON Validator, validate JSON, JSON syntax validation, JSON integrity check, JSON validation tool, online JSON validator"
+          content="JSON Validator, validate JSON, JSON syntax validation, json validator online, online JSON validator"
         />
       </Helmet>
 
