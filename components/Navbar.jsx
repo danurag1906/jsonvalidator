@@ -12,13 +12,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/json-to-csv" className="navbar-link">
-            JSON to CSV
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/csv-to-json" className="navbar-link">
-            CSV to JSON
+          <Link to="/xml-formatter" className="navbar-link">
+            XML Formatter
           </Link>
         </li>
         <li className="navbar-item">
@@ -27,8 +22,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/xml-formatter" className="navbar-link">
-            XML Formatter
+          <Link to="/json-to-csv" className="navbar-link">
+            JSON to CSV
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/csv-to-json" className="navbar-link">
+            CSV to JSON
           </Link>
         </li>
       </ul>

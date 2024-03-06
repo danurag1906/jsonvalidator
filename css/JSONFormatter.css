@@ -1,28 +1,29 @@
-.json-formatter-container {
+
+
+   .json-formatter-container {
     background-color: #F2F2F2;
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
     border-radius: 10px;
-    width: 100vw; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
     color: black;
   }
-  
   
   .json-formatter-title {
     color: #333;
     display: flex;
     align-items: center;
   }
-
-  .json-formatter-actions{
+  
+  .json-formatter-actions {
     margin: 1rem;
   }
   
   .format-button,
-  .clear-button ,
+  .clear-button,
   .download-button,
-  .copy-button{
+  .copy-button {
     margin-left: auto;
     background-color: #0051A8;
     color: #FFFFFF;
@@ -37,27 +38,49 @@
   .error-message {
     color: red;
   }
-
-  .space-between{
+  
+  .space-between {
     margin: 1.5rem;
     padding: 1.5rem;
   }
   
-  .json-formatter-description{
+  .json-formatter-description {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 50%;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
     justify-content: center;
     align-items: center;
   }
+  
   .json-formatter-content {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+  
   .json-editor {
-    flex: 1;
-    margin: 0 10px;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+    height: 300px; /* Adjust height as needed */
+    margin: 20px 0;
+  }
+  
+  /* Media Queries for Mobile Responsive Design */
+  @media screen and (max-width: 768px) {
+    .json-formatter-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .json-formatter-description {
+      width: 90%;
+    }
+    .json-formatter-content{
+      flex-direction: column;
+    }
   }
   
