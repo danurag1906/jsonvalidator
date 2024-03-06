@@ -56,13 +56,18 @@ const CSVToJSON = () => {
   return (
     <main className="json-formatter-container">
       <Helmet>
-        <title>CSV To JSON Converter</title>
+        <title>CSV to JSON Converter</title>
         <meta
           name="description"
           content="Convert CSV to JSON for easy data manipulation. Download the converted JSON file or copy the JSON data instantly."
         />
+        <meta
+          name="keywords"
+          content="CSV to JSON, convert CSV to JSON, CSV to JSON converter, JSON converter, CSV converter, online CSV to JSON converter"
+        />
       </Helmet>
-      <h2 className="json-formatter-title">CSV to JSON Converter</h2>
+
+      <h1 className="json-formatter-title">CSV to JSON Converter</h1>
       <div>
         <h2>How to Use:</h2>
         <p>

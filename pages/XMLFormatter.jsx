@@ -52,8 +52,13 @@ const XMLFormatter = () => {
           name="description"
           content="Format your XML code effortlessly. Format, fix indentation, and copy the formatted XML for sharing."
         />
+        <meta
+          name="keywords"
+          content="XML Formatter, format XML, XML indentation, XML formatting tool, online XML formatter, XML code formatting"
+        />
       </Helmet>
-      <h2 className="json-formatter-title">XML Formatter</h2>
+
+      <h1 className="json-formatter-title">XML Formatter</h1>
       <div>
         <h2>How to Use:</h2>
         <p>

@@ -40,8 +40,13 @@ const ValidateJSON = () => {
           name="description"
           content="Validate JSON data for syntax errors and integrity. Copy the validated JSON or download the validated JSON file."
         />
+        <meta
+          name="keywords"
+          content="JSON Validator, validate JSON, JSON syntax validation, JSON integrity check, JSON validation tool, online JSON validator"
+        />
       </Helmet>
-      <h2 className="json-formatter-title">JSON Validator</h2>
+
+      <h1 className="json-formatter-title">JSON Validator</h1>
       <div>
         <h2>How to Use:</h2>
         <p>

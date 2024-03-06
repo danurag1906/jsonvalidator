@@ -44,10 +44,15 @@ const JsonFormatter = () => {
         <title>JSON Formatter</title>
         <meta
           name="description"
-          content="Instantly format and beautify JSON data for improved readability. Copy the formatted JSON to your clipboard with ease."
+          content="Easily format and beautify JSON data with our online JSON Formatter tool. Instantly improve readability and organization of your JSON data for better understanding."
+        />
+        <meta
+          name="keywords"
+          content="JSON formatter, JSON beautifier, format JSON, beautify JSON, JSON formatting tool, JSON online tool"
         />
       </Helmet>
-      <h2 className="json-formatter-title">JSON Formatter</h2>
+
+      <h1 className="json-formatter-title">JSON Formatter</h1>
       <div>
         <h2>How to Use:</h2>
         <p>
