@@ -92,7 +92,7 @@ const CSVToJSON = () => {
             fontSize={16}
             showGutter={true}
             highlightActiveLine={true}
-            setOptions={{ useWorker: false }}
+            setOptions={{ useWorker: false, wrap: true }}
             className="json-editor"
           />
         </div>
@@ -107,7 +107,7 @@ const CSVToJSON = () => {
             fontSize={16}
             showGutter={true}
             highlightActiveLine={true}
-            setOptions={{ useWorker: false }}
+            setOptions={{ useWorker: false, wrap: true }}
             className="json-editor"
           />
         </div>
