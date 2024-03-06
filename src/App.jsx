@@ -7,6 +7,7 @@ import CSVToJSON from "../pages/CSVToJSON";
 import Navbar from "../components/Navbar";
 import JSONFormatter from "../pages/JSONFormatter";
 import XMLFormatter from "../pages/XMLFormatter";
+import Footer from "../components/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path="/json-validator" element={<ValidateJSON />} />
           <Route exact path="/xml-formatter" element={<XMLFormatter />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
