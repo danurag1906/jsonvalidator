@@ -41,34 +41,81 @@ const ValidateJSON = () => {
           content="Validate JSON data for syntax errors and integrity. Copy the validated JSON or download the validated JSON file."
         />
       </Helmet>
-      <h2 className="json-formatter-title">
-        JSON Validator
+      <h2 className="json-formatter-title">JSON Validator</h2>
+      <div>
+        <h2>How to Use:</h2>
+        <p>
+          Enter your JSON data in the editor below. Click the "Validate JSON"
+          button to check if the JSON syntax is valid. Any syntax errors will be
+          displayed above the editor. You can clear the editor by clicking the
+          "Clear" button.
+        </p>
+      </div>
+      <div className="json-formatter-actions">
         <button onClick={validateJson} className="format-button">
           Validate JSON
         </button>
         <button onClick={clearJson} className="clear-button">
           Clear
         </button>
-      </h2>
+      </div>
       {errorMessage && isValidationClicked && (
         <p className="error-message">{errorMessage}</p>
       )}
       {!errorMessage && isValidationClicked && jsonData && (
         <p className="valid-json-message">Valid JSON</p>
       )}
-      <div className="json-formatter-content">
+      <div>
         <AceEditor
           mode="json"
           theme="monokai"
           value={jsonData}
           onChange={handleJsonChange}
           height="500px"
+          placeholder="Enter JSON data"
           fontSize={16}
           showGutter={true}
           highlightActiveLine={true}
           setOptions={{ useWorker: false, wrap: true }}
-          className="json-editor"
         />
+        <div className="editor-description">
+          <h4>About JSON:</h4>
+          <p>
+            JSON (JavaScript Object Notation) is a lightweight data interchange
+            format. It is easy for humans to read and write. JSON is often used
+            for transmitting data between a server and a web application.
+          </p>
+          <p>
+            Learn more about JSON{" "}
+            <a
+              href="https://www.json.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+            .
+          </p>
+          <h4>Examples of Invalid JSON:</h4>
+          <ul>
+            <li>
+              Missing quotes around keys:
+              <pre>{`{name: "John", age: 30}`}</pre>
+            </li>
+            <li>
+              Unquoted strings:
+              <pre>{`{name: John, "age": 30}`}</pre>
+            </li>
+            <li>
+              Trailing commas:
+              <pre>{`{name: "John", "age": 30,}`}</pre>
+            </li>
+            <li>
+              Single quotes instead of double quotes:
+              <pre>{`{'name': 'John', 'age': 30}`}</pre>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   );

@@ -1,27 +1,30 @@
 .navbar-container {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  .navbar-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-item {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .navbar-link {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-  }
-  
-  .navbar-link:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
+  background-color: #333;
+  padding: 10px;
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top of the viewport */
+  width: 100%; /* Take up the full width of the viewport */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
