@@ -77,7 +77,6 @@ const ValidateJSON = () => {
           value={jsonData}
           onChange={handleJsonChange}
           height="500px"
-          placeholder="Enter JSON data"
           fontSize={16}
           showGutter={true}
           highlightActiveLine={true}
@@ -93,6 +92,7 @@ const ValidateJSON = () => {
           <p>
             Learn more about JSON{" "}
             <a
+              style={{ color: "#1E1BDA" }}
               href="https://www.json.org/"
               target="_blank"
               rel="noopener noreferrer"

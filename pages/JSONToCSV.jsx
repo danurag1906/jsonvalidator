@@ -99,14 +99,14 @@ const JSONToCSV = () => {
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <div className="json-formatter-content">
         <div className="json-input">
-          <h3>JSON Input</h3>
+          <h3>JSON Input </h3>
+          <p>Enter data in [] brackets</p>
           <AceEditor
             mode="json"
             theme="monokai"
             value={jsonData}
             onChange={handleJsonChange}
             height="500px"
-            placeholder="Enter the json inside a [] bracket"
             fontSize={16}
             showGutter={true}
             highlightActiveLine={true}
@@ -124,6 +124,7 @@ const JSONToCSV = () => {
             <p>
               Learn more about JSON{" "}
               <a
+                style={{ color: "#1E1BDA" }}
                 href="https://www.json.org/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -159,6 +160,7 @@ const JSONToCSV = () => {
             <p>
               Learn more about CSV{" "}
               <a
+                style={{ color: "#1E1BDA" }}
                 href="https://en.wikipedia.org/wiki/Comma-separated_values"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -82,7 +82,6 @@ const JsonFormatter = () => {
           theme="monokai"
           value={jsonData}
           onChange={handleJsonChange}
-          placeholder="Enter the JSON data"
           height="500px"
           fontSize={16}
           showGutter={true}
@@ -150,7 +149,11 @@ const JsonFormatter = () => {
           </pre>
           <p>
             You can find more examples of JSON data{" "}
-            <a target="_blank" href="https://www.json.org/example.html">
+            <a
+              style={{ color: "#1E1BDA" }}
+              target="_blank"
+              href="https://www.json.org/example.html"
+            >
               here
             </a>
             .

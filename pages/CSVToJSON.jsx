@@ -106,7 +106,6 @@ const CSVToJSON = () => {
             value={csvData}
             onChange={handleCsvChange}
             height="500px"
-            placeholder="Enter CSV data"
             fontSize={16}
             showGutter={true}
             highlightActiveLine={true}
@@ -124,6 +123,7 @@ const CSVToJSON = () => {
             <p>
               Learn more about CSV{" "}
               <a
+                style={{ color: "#1E1BDA" }}
                 href="https://en.wikipedia.org/wiki/Comma-separated_values"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -159,6 +159,7 @@ const CSVToJSON = () => {
             <p>
               Learn more about JSON{" "}
               <a
+                style={{ color: "#1E1BDA" }}
                 href="https://www.json.org/"
                 target="_blank"
                 rel="noopener noreferrer"

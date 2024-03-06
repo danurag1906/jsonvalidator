@@ -88,7 +88,6 @@ const XMLFormatter = () => {
           theme="monokai"
           value={xmlData}
           onChange={handleXMLChange}
-          placeholder="Enter XML data"
           height="500px"
           fontSize={16}
           showGutter={true}
@@ -155,6 +154,7 @@ const XMLFormatter = () => {
           <p>
             You can find more examples of XML data{" "}
             <a
+              style={{ color: "#1E1BDA" }}
               target="_blank"
               href="https://www.w3schools.com/xml/xml_examples.asp"
             >

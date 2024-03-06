@@ -8,13 +8,17 @@ const Footer = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#333",
+        backgroundColor: "#050505",
       }}
     >
       <p style={{ color: "white" }}>
         Developed and maintained by{" "}
         <span>
-          <a target="_blank" href="https://www.linkedin.com/in/anurag-daliya/">
+          <a
+            style={{ color: "#8C96DE" }}
+            target="_blank"
+            href="https://www.linkedin.com/in/anurag-daliya/"
+          >
             Anurag Daliya.
           </a>
         </span>
