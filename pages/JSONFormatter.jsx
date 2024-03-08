@@ -18,7 +18,7 @@ const JsonFormatter = () => {
   const formatJson = () => {
     try {
       const parsedJson = JSON.parse(jsonData); // Attempt to parse JSON
-      const formatted = JSON.stringify(parsedJson, null, 1);
+      const formatted = JSON.stringify(parsedJson, null, 2);
       setFormattedJson(formatted);
       setErrorMessage(""); // Clear any previous error message
     } catch (error) {
@@ -137,20 +137,114 @@ const JsonFormatter = () => {
 
         <div>
           <h2>Example:</h2>
-          <p>Unformatted JSON:</p>
-          <pre>
-            {`{"name": "John Doe","age": 30,
-  "city": "New York"
-}`}
-          </pre>
-          <p>Formatted JSON:</p>
-          <pre>
-            {`{
-  "name": "John Doe",
-  "age": 30,
-  "city": "New York"
-}`}
-          </pre>
+          <div style={{ display: "flex" }}>
+            <div>
+              <p>Unformatted JSON:</p>
+              <pre>
+                {`[
+  {"name": "John","age": 30,"address": {"city": "New York",
+      "country": "USA"
+    },
+    "hobbies": ["Reading", "Gaming"],
+    "family": {
+      "spouse": {
+        "name": "Jane","age": 28,
+        "occupation": "Engineer"
+      },
+      "children": [
+        {
+          "name": "Alice",
+          "age": 5
+        },{
+          "name": "Bob","age": 7
+        }
+      ]
+    }
+  },{
+    "name": "Alice","age": 25,
+    "address": {
+      "city": "Los Angeles","country": "USA"
+    },
+    "hobbies": ["Traveling", "Photography"],
+    "family": {
+      "spouse": {
+        "name": "Mike","age": 30,
+        "occupation": "Artist"
+      },
+      "children": [
+        {
+          "name": "Eve",
+          "age": 3
+        }
+      ]
+    }
+  }
+]`}
+              </pre>
+            </div>
+            <div style={{ padding: "5rem" }}></div>
+            <div>
+              <p>Formatted JSON:</p>
+              <pre>
+                {`[
+  {
+    "name": "John",
+    "age": 30,
+    "address": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "hobbies": [
+      "Reading",
+      "Gaming"
+    ],
+    "family": {
+      "spouse": {
+        "name": "Jane",
+        "age": 28,
+        "occupation": "Engineer"
+      },
+      "children": [
+        {
+          "name": "Alice",
+          "age": 5
+        },
+        {
+          "name": "Bob",
+          "age": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "Alice",
+    "age": 25,
+    "address": {
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "hobbies": [
+      "Traveling",
+      "Photography"
+    ],
+    "family": {
+      "spouse": {
+        "name": "Mike",
+        "age": 30,
+        "occupation": "Artist"
+      },
+      "children": [
+        {
+          "name": "Eve",
+          "age": 3
+        }
+      ]
+    }
+  }
+]`}
+              </pre>
+            </div>
+          </div>
           <p>
             You can find more examples of JSON data{" "}
             <a
